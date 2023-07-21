@@ -12,6 +12,7 @@ class ListViewController: UIViewController {
 
     private var viewModel: ListViewModel
     private let tableView = UITableView.useConstraint
+    private var bag = Set<AnyCancellable>()
 
     public init(viewModel: ListViewModel) {
         self.viewModel = viewModel
@@ -28,6 +29,13 @@ class ListViewController: UIViewController {
         configure()
         setupLayout()
         self.title = viewModel.title
+        
+        viewModel.$items
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.tableView.reloadData()
+            }
+            .store(in: &bag)
     }
 
     private func addSubviews() {

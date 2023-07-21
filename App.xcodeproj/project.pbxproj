@@ -51,6 +51,7 @@
 		4ADACEBE280424FB00706AD5 /* GlobalUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADACEAE280424FA00706AD5 /* GlobalUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		4ADACE9F2804238D00706AD5 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
+		CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +231,7 @@
 		4AA546F028042F7600BCE871 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				4AA5470B28045EA700BCE871 /* ForecastService.swift */,
+				CE6ADEAB2A69C7080012F637 /* ForecastData */,
 				4AA5470D28045F6A00BCE871 /* Models */,
 				4AA5470728045BC200BCE871 /* Network */,
 			);
@@ -355,6 +357,15 @@
 				4AA547202805680A00BCE871 /* Theme.swift */,
 			);
 			path = GlobalUI;
+			sourceTree = "<group>";
+		};
+		CE6ADEAB2A69C7080012F637 /* ForecastData */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5470B28045EA700BCE871 /* ForecastService.swift */,
+				CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */,
+			);
+			path = ForecastData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +532,7 @@
 				4AA546FE2804429700BCE871 /* DetailViewCoordinator.swift in Sources */,
 				4AA5471F28046D8B00BCE871 /* DetailView.swift in Sources */,
 				4ADACE4528041D6800706AD5 /* ListViewController.swift in Sources */,
+				CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */,
 				4ADACE4128041D6800706AD5 /* AppDelegate.swift in Sources */,
 				4AA546EE28042BC900BCE871 /* ListViewCoordinator.swift in Sources */,
 				4AA5470628045BBB00BCE871 /* ForecastNetworkServiceImpl.swift in Sources */,
@@ -723,7 +735,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -751,7 +763,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -777,7 +789,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -807,7 +819,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -838,7 +850,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -869,7 +881,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LWJTLD5565;
+				DEVELOPMENT_TEAM = T999GJYMD3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
