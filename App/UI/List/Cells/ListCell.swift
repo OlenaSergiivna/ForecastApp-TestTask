@@ -29,7 +29,7 @@ class ListCell: UITableViewCell {
 
     func configure() {
         label.textColor = .white
-        contentView.backgroundColor = GlobalColor.backgroundColor
+        self.backgroundColor = GlobalColor.backgroundColor
     }
     
     func configureData(with item: ForecastItem) {
