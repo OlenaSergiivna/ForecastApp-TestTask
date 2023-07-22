@@ -10,9 +10,12 @@ import GlobalUI
 
 class DetailViewController: UIViewController {
     
+    private var viewModel: DetailViewModel
+    
     let contentView = DetailView.useConstraint
 
-    public init() {
+    public init(viewModel: DetailViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -22,6 +25,15 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: add content view as subview
+        
+        view.addSubview(contentView)
+        setupConstraints()
+    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            contentView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            contentView.heightAnchor.constraint(equalTo: view.heightAnchor)
+        ])
     }
 }

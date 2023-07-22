@@ -89,4 +89,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         deleteAction.backgroundColor = .systemRed
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let showDetails = viewModel.showDetail {
+            showDetails(viewModel.items[indexPath.row])
+        }
+    }
 }
