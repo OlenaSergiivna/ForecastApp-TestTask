@@ -16,7 +16,8 @@ class ListViewCoordinator {
         
         viewModel.showDetail = { forecastItem in
             guard let navigationController = self.navigationController else { return }
-            let detailCoordinator = DetailViewCoordinator(navigationController: navigationController)
+            let detailViewModel = DetailViewModel(forecastItem: forecastItem)
+            let detailCoordinator = DetailViewCoordinator(navigationController: navigationController, viewModel: detailViewModel)
             detailCoordinator.start()
         }
         

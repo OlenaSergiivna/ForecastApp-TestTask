@@ -52,6 +52,7 @@
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */; };
+		CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
 		CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
+		CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				4AA546FB2804428400BCE871 /* DetailViewController.swift */,
 				4AA5471E28046D8B00BCE871 /* DetailView.swift */,
 				4AA546FF280442A300BCE871 /* DetailViewModel.swift */,
+				CEB0DB1E2A6D8F1300E0540D /* CustomViews */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -366,6 +369,14 @@
 				CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */,
 			);
 			path = ForecastData;
+			sourceTree = "<group>";
+		};
+		CEB0DB1E2A6D8F1300E0540D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +547,7 @@
 				4ADACE4128041D6800706AD5 /* AppDelegate.swift in Sources */,
 				4AA546EE28042BC900BCE871 /* ListViewCoordinator.swift in Sources */,
 				4AA5470628045BBB00BCE871 /* ForecastNetworkServiceImpl.swift in Sources */,
+				CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */,
 				4AA5470A28045C9F00BCE871 /* ForecastItemDTO.swift in Sources */,
 				4AA54700280442A300BCE871 /* DetailViewModel.swift in Sources */,
 				4AA546EC28042B6700BCE871 /* ListViewModel.swift in Sources */,

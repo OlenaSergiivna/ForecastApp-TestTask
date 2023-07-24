@@ -30,6 +30,7 @@ class ListCell: UITableViewCell {
     func configure() {
         label.textColor = .white
         self.backgroundColor = GlobalColor.backgroundColor
+        selectionStyle = .none
     }
     
     func configureData(with item: ForecastItem) {
