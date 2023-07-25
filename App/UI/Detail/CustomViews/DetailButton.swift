@@ -35,7 +35,7 @@ class DetailButton: UIButton {
     let thirdLabel: UILabel = {
         let thirdLabel = UILabel()
         thirdLabel.textColor = .white
-        thirdLabel.font = .systemFont(ofSize: 16, weight: .light)
+        thirdLabel.font = .systemFont(ofSize: 16, weight: .regular)
         thirdLabel.numberOfLines = 0
         return thirdLabel
         

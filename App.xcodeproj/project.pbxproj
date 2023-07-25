@@ -52,6 +52,8 @@
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */; };
+		CE99E8D42A704CBD0035E713 /* UIView+setBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */; };
+		CE99E8D62A704CF50035E713 /* UILable+setAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */; };
 		CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,8 @@
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
 		CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
+		CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+setBlur.swift"; sourceTree = "<group>"; };
+		CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+setAttributedText.swift"; sourceTree = "<group>"; };
 		CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -316,6 +320,7 @@
 				4AA546F6280431BC00BCE871 /* AppModule.swift */,
 				4AA546F028042F7600BCE871 /* Business */,
 				4AA546EF28042F6A00BCE871 /* UI */,
+				CE99E8D22A704CA50035E713 /* Extensions */,
 				4ADACE4C28041D6800706AD5 /* Assets.xcassets */,
 				4ADACE4E28041D6800706AD5 /* LaunchScreen.storyboard */,
 				4ADACE5128041D6800706AD5 /* Info.plist */,
@@ -369,6 +374,15 @@
 				CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */,
 			);
 			path = ForecastData;
+			sourceTree = "<group>";
+		};
+		CE99E8D22A704CA50035E713 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */,
+				CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CEB0DB1E2A6D8F1300E0540D /* CustomViews */ = {
@@ -547,6 +561,8 @@
 				4ADACE4128041D6800706AD5 /* AppDelegate.swift in Sources */,
 				4AA546EE28042BC900BCE871 /* ListViewCoordinator.swift in Sources */,
 				4AA5470628045BBB00BCE871 /* ForecastNetworkServiceImpl.swift in Sources */,
+				CE99E8D42A704CBD0035E713 /* UIView+setBlur.swift in Sources */,
+				CE99E8D62A704CF50035E713 /* UILable+setAttributedText.swift in Sources */,
 				CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */,
 				4AA5470A28045C9F00BCE871 /* ForecastItemDTO.swift in Sources */,
 				4AA54700280442A300BCE871 /* DetailViewModel.swift in Sources */,

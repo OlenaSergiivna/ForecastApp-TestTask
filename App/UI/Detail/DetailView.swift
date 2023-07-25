@@ -95,6 +95,10 @@ class DetailView: UIView {
             sunsetButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5, constant: -20),
             sunsetButton.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5, constant: -20)
         ])
+        
+        chanceRainButton.firstLabel.setAttributedText(text: "CHANCE RAIN", withImage: "cloud.rain")
+        sunriseButton.firstLabel.setAttributedText(text: "SUNRISE", withImage: "sunrise")
+        sunsetButton.firstLabel.setAttributedText(text: "SUNSET", withImage: "sunset")
     }
     
     required init?(coder: NSCoder) {
