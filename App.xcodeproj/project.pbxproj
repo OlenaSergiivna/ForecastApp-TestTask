@@ -51,6 +51,7 @@
 		4ADACEBE280424FB00706AD5 /* GlobalUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADACEAE280424FA00706AD5 /* GlobalUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE12CC952A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12CC942A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift */; };
 		CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */; };
 		CE99E8D42A704CBD0035E713 /* UIView+setBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */; };
 		CE99E8D62A704CF50035E713 /* UILable+setAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */; };
@@ -148,6 +149,7 @@
 		4ADACE9F2804238D00706AD5 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
+		CE12CC942A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoForecastNetworkServiceImpl.swift; sourceTree = "<group>"; };
 		CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
 		CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+setBlur.swift"; sourceTree = "<group>"; };
 		CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+setAttributedText.swift"; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				4ADACE4028041D6800706AD5 /* AppDelegate.swift */,
 				4ADACE4228041D6800706AD5 /* SceneDelegate.swift */,
 				4AA546F6280431BC00BCE871 /* AppModule.swift */,
+				CE12CC932A71435D00E43820 /* DemoMode */,
 				4AA546F028042F7600BCE871 /* Business */,
 				4AA546EF28042F6A00BCE871 /* UI */,
 				CE99E8D22A704CA50035E713 /* Extensions */,
@@ -365,6 +368,14 @@
 				4AA547202805680A00BCE871 /* Theme.swift */,
 			);
 			path = GlobalUI;
+			sourceTree = "<group>";
+		};
+		CE12CC932A71435D00E43820 /* DemoMode */ = {
+			isa = PBXGroup;
+			children = (
+				CE12CC942A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift */,
+			);
+			path = DemoMode;
 			sourceTree = "<group>";
 		};
 		CE6ADEAB2A69C7080012F637 /* ForecastData */ = {
@@ -571,6 +582,7 @@
 				4AA5470C28045EA700BCE871 /* ForecastService.swift in Sources */,
 				4AA5470428045ADA00BCE871 /* ForecastNetworkService.swift in Sources */,
 				4AA5471B2804679C00BCE871 /* ListCell.swift in Sources */,
+				CE12CC952A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift in Sources */,
 				4AA546F7280431BC00BCE871 /* AppModule.swift in Sources */,
 				4AA546FC2804428400BCE871 /* DetailViewController.swift in Sources */,
 				4AA5470F28045F7400BCE871 /* ForecastItem.swift in Sources */,
