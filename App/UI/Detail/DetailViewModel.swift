@@ -46,7 +46,8 @@ class DetailViewModel {
     func formattedSunriseTime() -> String {
         let sunriseHours = forecastItem.sunrise / 3600
         let sunriseMinutes = (forecastItem.sunrise % 3600) / 60
-        return "\(sunriseHours):\(sunriseMinutes)"
+        
+        return String(format: "%02d:%02d", sunriseHours, sunriseMinutes)
     }
     
     func sunriseDescription() -> String {

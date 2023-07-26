@@ -29,12 +29,13 @@ class DetailViewController: UIViewController {
         view.addSubview(contentView)
         setupConstraints()
         setupData()
+        configureNavBar()
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
             contentView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            contentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contentView.topAnchor.constraint(equalTo: view.topAnchor),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
@@ -53,5 +54,20 @@ class DetailViewController: UIViewController {
         
         contentView.sunsetButton.secondLabel.text = viewModel.formattedSunsetTime()
         contentView.sunsetButton.thirdLabel.text = viewModel.sunsetDescription()
+        
+        guard let backImage = UIImage(named: viewModel.forecastItem.description) else { return }
+        contentView.backImageView.image = backImage
+    }
+    
+    
+    func configureNavBar() {
+        let barAppearance = UINavigationBarAppearance()
+        barAppearance.configureWithTransparentBackground()
+        barAppearance.backgroundColor = .clear
+        
+        navigationController?.navigationBar.tintColor = .white
+        navigationItem.standardAppearance = barAppearance
+        navigationItem.scrollEdgeAppearance = barAppearance
+        
     }
 }

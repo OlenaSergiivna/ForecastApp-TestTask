@@ -9,7 +9,7 @@ import UIKit
 
 extension UILabel {
     
-    func setAttributedText(text: String, withImage imageName: String, color: UIColor = .darkGray) {
+    func setAttributedText(text: String, withImage imageName: String, color: UIColor = .lightGray) {
         let imageAttachment = NSTextAttachment()
         imageAttachment.image = UIImage(systemName: imageName)?.withTintColor(color)
         let fullString = NSMutableAttributedString(attachment: imageAttachment)

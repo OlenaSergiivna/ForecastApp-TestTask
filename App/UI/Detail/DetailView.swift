@@ -9,11 +9,19 @@ import GlobalUI
 
 class DetailView: UIView {
     
+    let backImageView: UIImageView = {
+        let backImageView = UIImageView()
+        backImageView.translatesAutoresizingMaskIntoConstraints = false
+        backImageView.clipsToBounds = true
+        backImageView.contentMode = .scaleAspectFill
+        return backImageView
+    }()
+    
     let temperatureLabel: UILabel = {
         let temperatureLabel = UILabel()
         temperatureLabel.translatesAutoresizingMaskIntoConstraints = false
         temperatureLabel.textAlignment = .center
-        temperatureLabel.font = .systemFont(ofSize: 82, weight: .thin)
+        temperatureLabel.font = .systemFont(ofSize: 90, weight: .thin)
         temperatureLabel.textColor = .white
         return temperatureLabel
     }()
@@ -32,7 +40,7 @@ class DetailView: UIView {
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.textAlignment = .center
         descriptionLabel.font = .systemFont(ofSize: 21, weight: .regular)
-        descriptionLabel.textColor = .darkGray
+        descriptionLabel.textColor = .white
         return descriptionLabel
     }()
     
@@ -56,24 +64,29 @@ class DetailView: UIView {
         
         backgroundColor = GlobalColor.backgroundColor
         
-        addSubview(temperatureLabel)
-        addSubview(chanceRainButton)
-        addSubview(dayLabel)
-        addSubview(descriptionLabel)
-        addSubview(lowHighLabel)
-        addSubview(sunriseButton)
-        addSubview(sunsetButton)
+        addSubview(backImageView)
+        backImageView.addSubview(temperatureLabel)
+        backImageView.addSubview(chanceRainButton)
+        backImageView.addSubview(dayLabel)
+        backImageView.addSubview(descriptionLabel)
+        backImageView.addSubview(lowHighLabel)
+        backImageView.addSubview(sunriseButton)
+        backImageView.addSubview(sunsetButton)
         
         
         NSLayoutConstraint.activate([
+            backImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            backImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            backImageView.topAnchor.constraint(equalTo: topAnchor),
+            backImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            temperatureLabel.topAnchor.constraint(equalTo: topAnchor, constant: 64),
+            dayLabel.topAnchor.constraint(equalTo: topAnchor, constant: 124),
+            dayLabel.centerXAnchor.constraint(equalTo: temperatureLabel.centerXAnchor),
+            
+            temperatureLabel.topAnchor.constraint(equalTo: dayLabel.bottomAnchor, constant: -8),
             temperatureLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
             temperatureLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
 
-            dayLabel.bottomAnchor.constraint(equalTo: temperatureLabel.topAnchor, constant: -4),
-            dayLabel.centerXAnchor.constraint(equalTo: temperatureLabel.centerXAnchor),
-            
             descriptionLabel.centerXAnchor.constraint(equalTo: temperatureLabel.centerXAnchor),
             descriptionLabel.topAnchor.constraint(equalTo: temperatureLabel.bottomAnchor, constant: -8),
             

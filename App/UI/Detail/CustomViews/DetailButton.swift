@@ -20,7 +20,7 @@ class DetailButton: UIButton {
     
     let firstLabel: UILabel = {
         let firstLabel = UILabel()
-        firstLabel.textColor = .darkGray
+        firstLabel.textColor = .lightGray
         firstLabel.font = .systemFont(ofSize: 14, weight: .medium)
         return firstLabel
     }()
@@ -36,6 +36,7 @@ class DetailButton: UIButton {
         let thirdLabel = UILabel()
         thirdLabel.textColor = .white
         thirdLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        thirdLabel.adjustsFontSizeToFitWidth = true
         thirdLabel.numberOfLines = 0
         return thirdLabel
         
