@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
         contentView.sunsetButton.secondLabel.text = viewModel.formattedSunsetTime()
         contentView.sunsetButton.thirdLabel.text = viewModel.sunsetDescription()
         
-        guard let backImage = UIImage(named: viewModel.forecastItem.description) else { return }
+        guard let backImage = UIImage(named: "\(viewModel.forecastItem.description.lowercased())_image") else { return }
         contentView.backImageView.image = backImage
     }
     
