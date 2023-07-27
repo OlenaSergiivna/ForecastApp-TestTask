@@ -51,6 +51,8 @@ class ListCell: UITableViewCell {
             label.text? += " ☁️"
         case "Showers":
             label.text? += " ☔️"
+        case "Cloudy":
+            label.text? += " 🌤️"
         default:
             return
         }
