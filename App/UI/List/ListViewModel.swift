@@ -16,7 +16,7 @@ class ListViewModel {
 
     var showDetail: ((ForecastItem) -> Void)?
 
-    var title: String = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as! String
+    var title: String = "Weather Forecast"
 
     init() {
         service.getForecastData()

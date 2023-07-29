@@ -22,7 +22,7 @@ class ListViewCoordinator {
         }
         
         let viewController = ListViewController(viewModel: viewModel)
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let navigationController = ListNavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
 
         self.navigationController = navigationController

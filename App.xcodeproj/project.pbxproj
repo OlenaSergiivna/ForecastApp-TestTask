@@ -53,6 +53,7 @@
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE12CC952A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12CC942A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift */; };
 		CE6ADEAD2A69C7380012F637 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */; };
+		CE7C010F2A74048F008E3765 /* ListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C010E2A74048F008E3765 /* ListNavigationController.swift */; };
 		CE99E8D42A704CBD0035E713 /* UIView+setBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */; };
 		CE99E8D62A704CF50035E713 /* UILable+setAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */; };
 		CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */; };
@@ -151,6 +152,7 @@
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
 		CE12CC942A7143CA00E43820 /* DemoForecastNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoForecastNetworkServiceImpl.swift; sourceTree = "<group>"; };
 		CE6ADEAC2A69C7380012F637 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
+		CE7C010E2A74048F008E3765 /* ListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationController.swift; sourceTree = "<group>"; };
 		CE99E8D32A704CBD0035E713 /* UIView+setBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+setBlur.swift"; sourceTree = "<group>"; };
 		CE99E8D52A704CF50035E713 /* UILable+setAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+setAttributedText.swift"; sourceTree = "<group>"; };
 		CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
@@ -222,7 +224,7 @@
 				4AA546ED28042BC900BCE871 /* ListViewCoordinator.swift */,
 				4ADACE4428041D6800706AD5 /* ListViewController.swift */,
 				4AA546EB28042B6700BCE871 /* ListViewModel.swift */,
-				4AA547192804678000BCE871 /* Cells */,
+				CE7C010D2A74044B008E3765 /* CustomUI */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -262,7 +264,7 @@
 				4AA546FB2804428400BCE871 /* DetailViewController.swift */,
 				4AA5471E28046D8B00BCE871 /* DetailView.swift */,
 				4AA546FF280442A300BCE871 /* DetailViewModel.swift */,
-				CEB0DB1E2A6D8F1300E0540D /* CustomViews */,
+				CEB0DB1E2A6D8F1300E0540D /* CustomUI */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -387,6 +389,15 @@
 			path = ForecastData;
 			sourceTree = "<group>";
 		};
+		CE7C010D2A74044B008E3765 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C010E2A74048F008E3765 /* ListNavigationController.swift */,
+				4AA547192804678000BCE871 /* Cells */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		CE99E8D22A704CA50035E713 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,12 +407,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CEB0DB1E2A6D8F1300E0540D /* CustomViews */ = {
+		CEB0DB1E2A6D8F1300E0540D /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
 				CEB0DB1F2A6D8F4800E0540D /* DetailButton.swift */,
 			);
-			path = CustomViews;
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,6 +585,7 @@
 				4AA5470628045BBB00BCE871 /* ForecastNetworkServiceImpl.swift in Sources */,
 				CE99E8D42A704CBD0035E713 /* UIView+setBlur.swift in Sources */,
 				CE99E8D62A704CF50035E713 /* UILable+setAttributedText.swift in Sources */,
+				CE7C010F2A74048F008E3765 /* ListNavigationController.swift in Sources */,
 				CEB0DB202A6D8F4800E0540D /* DetailButton.swift in Sources */,
 				4AA5470A28045C9F00BCE871 /* ForecastItemDTO.swift in Sources */,
 				4AA54700280442A300BCE871 /* DetailViewModel.swift in Sources */,

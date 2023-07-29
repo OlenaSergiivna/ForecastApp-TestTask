@@ -26,7 +26,7 @@ extension ForecastItem {
         self.sunset = forecastItemDTO.sunset
         self.chanceRain = forecastItemDTO.chanceRain
         self.high = forecastItemDTO.high
-        self.low = forecastItemDTO.high
+        self.low = forecastItemDTO.low
         self.type = forecastItemDTO.type
     }
 }
